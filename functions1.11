@@ -1,0 +1,21 @@
+"""""
+functions1.11
+Write a Python function that checks whether a word or phrase is palindrome or not. Note: A palindrome is word, phrase, or sequence that reads the same backward as
+ forward, e.g., madam
+ """
+def is_palindrome(s):
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+
+print(is_palindrome("madam"))  
+print(is_palindrome("racecar"))  
+print(is_palindrome("hello")) 
+print(is_palindrome("A man a plan a canal Panama"))  
+
+"""""
+output:
+True
+True
+False
+True
+"""

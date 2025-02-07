@@ -1,0 +1,41 @@
+"""""
+functions1.5
+Write a function that accepts string from user and print all permutations of that string.
+"""
+import itertools
+
+def print_permutations():
+    user_input = input("Enter a string: ")
+    permutations = itertools.permutations(user_input)
+    for perm in permutations:
+        print(''.join(perm))
+
+print_permutations()
+"""""
+output:
+Enter a string: aksu
+aksu
+akus
+asku
+asuk
+auks
+ausk
+kasu
+kaus
+ksau
+ksua
+kuas
+kusa
+saku
+sauk
+skau
+skua
+suak
+suka
+uaks
+uask
+ukas
+uksa
+usak
+uska
+"""
